@@ -1,0 +1,160 @@
+/* Reset e estilos básicos */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #120a31;
+  font-family: "Courier New", Courier, monospace;
+  color: #fff;
+}
+
+/* Container do efeito de fundo e conteúdo */
+#network-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Estilo aplicado ao canvas inserido via JavaScript */
+#network-container canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Conteúdo principal que ficará sobre o canvas */
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Estilo da imagem de perfil circular */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 20px;
+  display: block;
+  border: 4px solid #fff;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 10px 0 20px;
+}
+
+/* Estilo dos botões de skills */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(248, 248, 248, 0.9);
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.controls button {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.controls button i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.controls button:hover {
+  background-color: #eaeaea;
+  border-color: #999;
+}
+
+/* Seção de texto em duas colunas com fonte Roboto */
+.text-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+}
+
+.text-columns p {
+  flex: 1 1 45%;
+}
+
+/* Estilo do Footer */
+footer {
+  background-color: #1a0a47;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+  color: #ccc;
+}
+
+footer .contact-form {
+  margin-top: 20px;
+}
+
+footer .contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+footer .contact-form input,
+footer .contact-form textarea {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+footer .contact-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+footer .contact-form button:hover {
+  background-color: #eaeaea;
+}
